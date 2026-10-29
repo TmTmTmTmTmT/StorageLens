@@ -1,0 +1,20 @@
+[
+  {"id":"user-caches","title":"앱 캐시","pathPatterns":["~/Library/Caches/*"],"excludePatterns":["~/Library/Caches/com.apple.*"],"safety":"safe","method":"trash","regenerates":true,"note":"앱이 필요하면 다시 만드는 캐시입니다."},
+  {"id":"apple-caches","title":"Apple 시스템 캐시","pathPatterns":["~/Library/Caches/com.apple.*"],"safety":"review","method":"trash","regenerates":true,"note":"macOS 구성요소 캐시입니다. 개별 확인 후 정리하세요."},
+  {"id":"user-logs","title":"사용자 로그","pathPatterns":["~/Library/Logs/*"],"safety":"safe","method":"trash","regenerates":true,"note":"앱 로그 파일입니다."},
+  {"id":"homebrew","title":"Homebrew 다운로드 캐시","pathPatterns":["~/Library/Caches/Homebrew/downloads/*"],"safety":"safe","method":"trash","regenerates":true,"note":"내려받은 설치 파일 캐시입니다."},
+  {"id":"pip","title":"pip 캐시","pathPatterns":["~/Library/Caches/pip"],"safety":"safe","method":"trash","regenerates":true,"note":"Python 패키지 다운로드 캐시입니다."},
+  {"id":"uv","title":"uv 캐시","pathPatterns":["~/.cache/uv"],"safety":"safe","method":"command","command":{"tool":"uv","args":["cache","clean"]},"regenerates":true,"note":"uv 도구로 정리합니다. 도구가 없으면 정리할 수 없습니다."},
+  {"id":"playwright","title":"Playwright 브라우저","pathPatterns":["~/Library/Caches/ms-playwright/*"],"safety":"review","method":"trash","regenerates":true,"note":"브라우저 바이너리입니다. 지우면 다시 내려받아야 합니다."},
+  {"id":"xcode-derived","title":"Xcode DerivedData","pathPatterns":["~/Library/Developer/Xcode/DerivedData/*"],"safety":"safe","method":"trash","regenerates":true,"note":"빌드 산출물입니다. 다음 빌드 때 다시 만들어집니다."},
+  {"id":"xcode-sim-unavailable","title":"사용할 수 없는 시뮬레이터","pathPatterns":[],"safety":"safe","method":"command","command":{"tool":"xcrun","args":["simctl","delete","unavailable"]},"regenerates":false,"note":"현재 Xcode에서 쓸 수 없는 시뮬레이터를 삭제합니다."},
+  {"id":"icloud-local","title":"iCloud Drive 로컬 사본","pathPatterns":["~/Library/Mobile Documents"],"safety":"review","method":"icloudEvict","regenerates":false,"note":"로컬 사본만 비우고 클라우드 원본은 유지합니다. 업로드 대기 중인 파일은 실패합니다."},
+  {"id":"downloads-old","title":"오래된 다운로드","pathPatterns":["~/Downloads/*"],"minAgeDays":90,"safety":"review","method":"trash","regenerates":false,"note":"90일 이상 지난 다운로드 항목입니다."},
+  {"id":"huggingface","title":"Hugging Face 캐시","pathPatterns":["~/.cache/huggingface"],"safety":"discouraged","method":"trash","regenerates":false,"note":"공유 저장소 구조라 모델 폴더만 지우면 공간이 거의 안 빠지고 다른 모델이 깨질 수 있습니다. 전체 폴더를 정리하면 모든 모델을 다시 내려받아야 합니다."},
+  {"id":"app-support","title":"앱 데이터 (Application Support)","pathPatterns":["~/Library/Application Support/*"],"safety":"discouraged","method":"trash","regenerates":false,"note":"앱 설정, 로그인 정보, 문서가 사라질 수 있습니다. 해당 앱을 종료한 뒤 정리하세요."},
+  {"id":"containers","title":"앱 컨테이너","pathPatterns":["~/Library/Containers/*","~/Library/Group Containers/*"],"safety":"discouraged","method":"trash","regenerates":false,"note":"샌드박스 앱의 데이터입니다. 앱을 종료한 뒤 정리하세요. 앱이 초기 상태로 돌아갑니다."},
+  {"id":"app-preferences","title":"앱 설정 (Preferences)","pathPatterns":["~/Library/Preferences/*"],"excludePatterns":["~/Library/Preferences/com.apple.*"],"safety":"discouraged","method":"trash","regenerates":false,"note":"앱 설정 파일입니다. 지우면 해당 앱의 설정이 초기화됩니다."},
+  {"id":"saved-state","title":"앱 저장 상태","pathPatterns":["~/Library/Saved Application State/*"],"safety":"safe","method":"trash","regenerates":true,"note":"앱 창 위치 등 재실행 상태입니다. 지워도 앱이 다시 만듭니다."},
+  {"id":"personal-files","title":"개인 파일","pathPatterns":["~/Documents/*","~/Desktop/*","~/Pictures/*","~/Movies/*","~/Music/*"],"safety":"discouraged","method":"trash","regenerates":false,"note":"직접 만든 개인 파일일 수 있습니다. 휴지통에서 복구할 수 있지만 내용을 확인한 뒤 정리하세요."},
+  {"id":"orphan","title":"삭제된 앱의 잔여 데이터(추정)","pathPatterns":[],"safety":"review","method":"trash","regenerates":false,"note":"설치된 앱과 연결되지 않은 것으로 추정됩니다. 개별 확인 후 정리하세요."}
+]

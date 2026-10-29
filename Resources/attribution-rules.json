@@ -1,0 +1,160 @@
+{
+  "pathRules": [
+    {
+      "path": "~/.cache/huggingface",
+      "appName": "Hugging Face 라이브러리",
+      "symbol": "shippingbox",
+      "subtitle": "모델·데이터셋 캐시 (읽기 전용)"
+    },
+    {
+      "path": "~/.cache/uv",
+      "appName": "uv",
+      "symbol": "shippingbox",
+      "tool": "uv"
+    },
+    {
+      "path": "~/.cache/codex-runtimes",
+      "appName": "Codex",
+      "symbol": "terminal",
+      "subtitle": "Codex 런타임 캐시"
+    },
+    {
+      "path": "~/.cache/claude",
+      "appName": "Claude Code",
+      "symbol": "terminal",
+      "tool": "claude"
+    },
+    {
+      "path": "~/.cache/gh",
+      "appName": "GitHub CLI",
+      "symbol": "terminal",
+      "tool": "gh"
+    },
+    {
+      "path": "~/.cache/yt-dlp",
+      "appName": "yt-dlp",
+      "symbol": "arrow.down.circle",
+      "tool": "yt-dlp"
+    },
+    {
+      "path": "~/.cache/vllm",
+      "appName": "vLLM",
+      "symbol": "cpu"
+    },
+    {
+      "path": "~/.cache/gstreamer-1.0",
+      "appName": "GStreamer",
+      "symbol": "film",
+      "tool": "gst-launch-1.0"
+    },
+    {
+      "path": "~/.cache/chrome-devtools-mcp",
+      "appName": "Chrome DevTools MCP",
+      "symbol": "globe"
+    },
+    {
+      "path": "~/Library/Caches/Homebrew",
+      "appName": "Homebrew",
+      "symbol": "mug",
+      "tool": "brew"
+    },
+    {
+      "path": "~/Library/Caches/pip",
+      "appName": "pip",
+      "symbol": "shippingbox",
+      "tool": "pip3"
+    },
+    {
+      "path": "~/Library/Caches/ms-playwright",
+      "appName": "Playwright",
+      "symbol": "theatermasks"
+    },
+    {
+      "path": "~/Library/Developer/Xcode/DerivedData",
+      "appName": "Xcode",
+      "bundleID": "com.apple.dt.Xcode",
+      "subtitle": "DerivedData 빌드 산출물"
+    },
+    {
+      "path": "~/Library/Developer/Xcode/Archives",
+      "appName": "Xcode",
+      "bundleID": "com.apple.dt.Xcode",
+      "subtitle": "아카이브"
+    },
+    {
+      "path": "~/Library/Developer/CoreSimulator",
+      "appName": "Xcode",
+      "bundleID": "com.apple.dt.Xcode",
+      "subtitle": "시뮬레이터 데이터"
+    },
+    {
+      "path": "~/Library/Mobile Documents",
+      "appName": "iCloud Drive",
+      "symbol": "icloud"
+    },
+    {
+      "path": "~/.npm",
+      "appName": "npm",
+      "symbol": "shippingbox",
+      "tool": "npm",
+      "subtitle": "npm 캐시"
+    },
+    {
+      "path": "~/.gradle",
+      "appName": "Gradle",
+      "symbol": "hammer",
+      "subtitle": "Gradle 캐시"
+    },
+    {
+      "path": "~/Library/Group Containers/group.is.workflow.my.app",
+      "appName": "단축어",
+      "bundleID": "com.apple.shortcuts",
+      "subtitle": "macOS 시스템 앱"
+    }
+  ],
+  "vendorNames": {
+    "adobe": "Adobe",
+    "anthropic": "Anthropic",
+    "google": "Google",
+    "microsoft": "Microsoft",
+    "jetbrains": "JetBrains",
+    "blackmagic": "Blackmagic Design",
+    "mathworks": "MathWorks",
+    "openai": "OpenAI",
+    "docker": "Docker",
+    "github": "GitHub",
+    "mozilla": "Mozilla"
+  },
+  "appleDaemons": {
+    "com.apple.SwiftUI.Drag*": "SwiftUI 드래그 앤 드롭 임시 데이터",
+    "com.apple.nsurlsessiond": "백그라운드 네트워크 다운로드 서비스",
+    "com.apple.VisualIntelligenceCore": "시각 지능(Visual Intelligence) 모델 캐시",
+    "com.apple.intelligenceflow.intelligenceflowd": "Apple Intelligence 처리 흐름 서비스",
+    "com.apple.helpd": "도움말 서비스",
+    "com.apple.Music": "음악 앱 캐시",
+    "com.apple.e5rt.e5bundlecache": "Neural Engine 모델 컴파일 캐시",
+    "com.apple.TV": "TV 앱 캐시",
+    "com.apple.parsecd": "Siri 제안·검색 서비스",
+    "com.apple.icloudmailagent": "iCloud 메일 에이전트",
+    "com.apple.ctcategories.service": "콘텐츠 분류 서비스",
+    "com.apple.AppleMediaServices": "Apple 미디어 서비스(구매·구독)",
+    "com.apple.AMPLibraryAgent": "미디어 라이브러리 에이전트",
+    "com.apple.appstoreagent": "App Store 에이전트",
+    "com.apple.campo": "시스템 추천 서비스(campo)",
+    "com.apple.podcasts": "팟캐스트 앱 데이터",
+    "com.apple.tipsd": "팁 서비스",
+    "com.apple.amsengagementd": "Apple 미디어 서비스 참여 데몬",
+    "com.apple.FeatureAccessAgent": "기능 접근 에이전트",
+    "com.apple.CloudTelemetry": "iCloud 원격 측정",
+    "com.apple.managedappdistributionagent": "관리형 앱 배포 에이전트",
+    "com.apple.AgentCanvasUICore": "에이전트 캔버스 UI",
+    "com.apple.sirittsd": "Siri 음성 합성 서비스",
+    "com.apple.akd": "Apple ID 인증 데몬",
+    "com.apple.FileProviderDaemon.AppStoreService": "파일 제공자(App Store) 서비스",
+    "com.apple.appleaccountd": "Apple 계정 데몬",
+    "com.apple.amsaccountsd": "Apple 미디어 계정 데몬",
+    "com.apple.iTunes": "iTunes·음악 호환 캐시",
+    "com.apple.storekitagent": "StoreKit 에이전트",
+    "com.apple.appstorecomponentsd": "App Store 구성요소 서비스"
+  }
+}

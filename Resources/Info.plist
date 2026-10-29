@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key><string>com.kimmingyu.StorageLens</string>
+    <key>CFBundleDevelopmentRegion</key><string>ko</string>
+    <key>CFBundleLocalizations</key><array><string>ko</string></array>
+    <key>CFBundleName</key><string>StorageLens</string>
+    <key>CFBundleExecutable</key><string>StorageLens</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>CFBundleShortVersionString</key><string>1.2.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSMinimumSystemVersion</key><string>26.0</string>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSDesktopFolderUsageDescription</key><string>저장공간 분석을 위해 폴더 크기를 읽습니다</string>
+    <key>NSDocumentsFolderUsageDescription</key><string>저장공간 분석을 위해 폴더 크기를 읽습니다</string>
+    <key>NSDownloadsFolderUsageDescription</key><string>저장공간 분석을 위해 폴더 크기를 읽습니다</string>
+    <key>NSRemovableVolumesUsageDescription</key><string>저장공간 분석을 위해 폴더 크기를 읽습니다</string>
+</dict>
+</plist>
